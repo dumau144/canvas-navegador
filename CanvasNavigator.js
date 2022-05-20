@@ -27,7 +27,7 @@ class CanvasNavigator {
     }
   };
 
-  zoom(step, x, y) {
+  zoom(x, y, step) {
     if(step > 0) {
       this.transform.scale *= 1 + step;
       this.transform.translate.x -= (x / this.transform.scale) * step;
